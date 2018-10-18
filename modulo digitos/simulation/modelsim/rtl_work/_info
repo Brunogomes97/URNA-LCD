@@ -1,0 +1,45 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\cliente\Desktop\modulo digitos\simulation\modelsim
+vdigitos
+I9F2l^?cY:HHzamdhbSEmG1
+V8oR7`LVG;eDPkEAKN;[UR0
+Z1 dC:\Users\cliente\Desktop\modulo digitos\simulation\modelsim
+w1539741614
+8C:/Users/cliente/Desktop/modulo digitos/digitos.v
+FC:/Users/cliente/Desktop/modulo digitos/digitos.v
+L0 1
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+!i10b 1
+!s100 zXlQOgVYY0z=VYF4Ico>c2
+!s85 0
+!s108 1539742468.408000
+!s107 C:/Users/cliente/Desktop/modulo digitos/digitos.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/cliente/Desktop/modulo digitos|C:/Users/cliente/Desktop/modulo digitos/digitos.v|
+!s101 -O0
+Z4 !s92 -vlog01compat -work work {+incdir+C:/Users/cliente/Desktop/modulo digitos} -O0
+vtestbench
+!i10b 1
+!s100 [VS9<CWVJ89h=mDf:=W5d1
+IPOX3<QUDV;j<KbSEM_h;a0
+VhGfW:390DM[oDMzegDH9`2
+R1
+w1539741426
+8C:/Users/cliente/Desktop/modulo digitos/testbench.v
+FC:/Users/cliente/Desktop/modulo digitos/testbench.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1539742468.594000
+!s107 C:/Users/cliente/Desktop/modulo digitos/testbench.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/cliente/Desktop/modulo digitos|C:/Users/cliente/Desktop/modulo digitos/testbench.v|
+!s101 -O0
+R3
+R4

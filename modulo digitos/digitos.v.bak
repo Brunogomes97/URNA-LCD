@@ -1,0 +1,12 @@
+module digitos(key1,key2,hex1,hex2,rst);
+	input key1,key2.rst;
+	input rst;
+	output reg [6:0] hex1,hex2;
+	
+	
+	
+
+
+
+endmodule
+

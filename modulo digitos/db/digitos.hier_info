@@ -1,0 +1,40 @@
+|digitos
+key1 => teste.DATAIN
+key1 => d1[0].CLK
+key1 => d1[1].CLK
+key1 => d1[2].CLK
+key1 => d1[3].CLK
+key2 => d2[0].CLK
+key2 => d2[1].CLK
+key2 => d2[2].CLK
+key2 => d2[3].CLK
+hex1[0] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+hex1[1] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+hex1[2] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+hex1[3] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+hex1[4] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+hex1[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+hex1[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+hex2[0] <= Mux7.DB_MAX_OUTPUT_PORT_TYPE
+hex2[1] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+hex2[2] <= Decoder1.DB_MAX_OUTPUT_PORT_TYPE
+hex2[3] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+hex2[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+hex2[5] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+hex2[6] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+rst => ~NO_FANOUT~
+bcd1[0] <= d1[0].DB_MAX_OUTPUT_PORT_TYPE
+bcd1[1] <= d1[1].DB_MAX_OUTPUT_PORT_TYPE
+bcd1[2] <= d1[2].DB_MAX_OUTPUT_PORT_TYPE
+bcd1[3] <= d1[3].DB_MAX_OUTPUT_PORT_TYPE
+bcd2[0] <= d2[0].DB_MAX_OUTPUT_PORT_TYPE
+bcd2[1] <= d2[1].DB_MAX_OUTPUT_PORT_TYPE
+bcd2[2] <= d2[2].DB_MAX_OUTPUT_PORT_TYPE
+bcd2[3] <= d2[3].DB_MAX_OUTPUT_PORT_TYPE
+teste <= key1.DB_MAX_OUTPUT_PORT_TYPE
+d3[0] <= <VCC>
+d3[1] <= <GND>
+d3[2] <= <GND>
+d3[3] <= <GND>
+
+

@@ -1,0 +1,90 @@
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do digitos_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/cliente/Desktop/modulo\ digitos {C:/Users/cliente/Desktop/modulo digitos/digitos.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module digitos
+# 
+# Top level modules:
+# 	digitos
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/cliente/Desktop/modulo\ digitos {C:/Users/cliente/Desktop/modulo digitos/testbench.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module testbench
+# 
+# Top level modules:
+# 	testbench
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs="+acc"  testbench
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneii_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps testbench 
+# Loading work.testbench
+# Loading work.digitos
+# ** Warning: (vsim-3017) C:/Users/cliente/Desktop/modulo digitos/testbench.v(7): [TFMPC] - Too few port connections. Expected 9, found 7.
+# 
+#         Region: /testbench/a12
+# ** Warning: (vsim-3722) C:/Users/cliente/Desktop/modulo digitos/testbench.v(7): [TFMPC] - Missing connection for port 'rst'.
+# 
+# ** Warning: (vsim-3722) C:/Users/cliente/Desktop/modulo digitos/testbench.v(7): [TFMPC] - Missing connection for port 'bcd2'.
+# 
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# TESTE/  key1 = 1, key2 = 1 ,bcd1 =  0  hex1 = 1000000  , hex2  = 1000000,teste = 1,d3= 0
+# TESTE/  key1 = 0, key2 = 0 ,bcd1 =  1  hex1 = 1111001  , hex2  = 1111001,teste = 0,d3= 1
+# TESTE/  key1 = 1, key2 = 0 ,bcd1 =  1  hex1 = 1111001  , hex2  = 1111001,teste = 1,d3= 1
+# TESTE/  key1 = 0, key2 = 0 ,bcd1 =  2  hex1 = 0110000  , hex2  = 1111001,teste = 0,d3= 1
+# TESTE/  key1 = 1, key2 = 0 ,bcd1 =  2  hex1 = 0110000  , hex2  = 1111001,teste = 1,d3= 1
+# TESTE/  key1 = 0, key2 = 0 ,bcd1 =  3  hex1 = 0110000  , hex2  = 1111001,teste = 0,d3= 1
+# TESTE/  key1 = 1, key2 = 0 ,bcd1 =  3  hex1 = 0110000  , hex2  = 1111001,teste = 1,d3= 1
+# TESTE/  key1 = 0, key2 = 0 ,bcd1 =  4  hex1 = 0011001  , hex2  = 1111001,teste = 0,d3= 1
+# TESTE/  key1 = 1, key2 = 0 ,bcd1 =  4  hex1 = 0011001  , hex2  = 1111001,teste = 1,d3= 1
+# TESTE/  key1 = 0, key2 = 0 ,bcd1 =  5  hex1 = 0010010  , hex2  = 1111001,teste = 0,d3= 1
+# TESTE/  key1 = 1, key2 = 0 ,bcd1 =  5  hex1 = 0010010  , hex2  = 1111001,teste = 1,d3= 1
+# TESTE/  key1 = 0, key2 = 0 ,bcd1 =  6  hex1 = 0000010  , hex2  = 1111001,teste = 0,d3= 1
+# TESTE/  key1 = 1, key2 = 0 ,bcd1 =  6  hex1 = 0000010  , hex2  = 1111001,teste = 1,d3= 1
+# TESTE/  key1 = 0, key2 = 0 ,bcd1 =  7  hex1 = 0001111  , hex2  = 1111001,teste = 0,d3= 1
+# TESTE/  key1 = 1, key2 = 0 ,bcd1 =  7  hex1 = 0001111  , hex2  = 1111001,teste = 1,d3= 1
+# TESTE/  key1 = 0, key2 = 0 ,bcd1 =  8  hex1 = 0000000  , hex2  = 1111001,teste = 0,d3= 1
+# TESTE/  key1 = 1, key2 = 0 ,bcd1 =  8  hex1 = 0000000  , hex2  = 1111001,teste = 1,d3= 1
+# TESTE/  key1 = 0, key2 = 0 ,bcd1 =  9  hex1 = 0010000  , hex2  = 1111001,teste = 0,d3= 1
+# TESTE/  key1 = 1, key2 = 0 ,bcd1 =  9  hex1 = 0010000  , hex2  = 1111001,teste = 1,d3= 1
+# TESTE/  key1 = 0, key2 = 0 ,bcd1 =  0  hex1 = 1000000  , hex2  = 1111001,teste = 0,d3= 1
+# TESTE/  key1 = 1, key2 = 0 ,bcd1 =  0  hex1 = 1000000  , hex2  = 1111001,teste = 1,d3= 1
+# TESTE/  key1 = 0, key2 = 0 ,bcd1 =  1  hex1 = 1111001  , hex2  = 1111001,teste = 0,d3= 1
+# TESTE/  key1 = 1, key2 = 0 ,bcd1 =  1  hex1 = 1111001  , hex2  = 1111001,teste = 1,d3= 1
+# TESTE/  key1 = 0, key2 = 0 ,bcd1 =  2  hex1 = 0110000  , hex2  = 1111001,teste = 0,d3= 1
+# TESTE/  key1 = 1, key2 = 0 ,bcd1 =  2  hex1 = 0110000  , hex2  = 1111001,teste = 1,d3= 1
+# TESTE/  key1 = 0, key2 = 0 ,bcd1 =  3  hex1 = 0110000  , hex2  = 1111001,teste = 0,d3= 1
+# TESTE/  key1 = 1, key2 = 0 ,bcd1 =  3  hex1 = 0110000  , hex2  = 1111001,teste = 1,d3= 1
+# TESTE/  key1 = 0, key2 = 0 ,bcd1 =  4  hex1 = 0011001  , hex2  = 1111001,teste = 0,d3= 1
+# TESTE/  key1 = 1, key2 = 0 ,bcd1 =  4  hex1 = 0011001  , hex2  = 1111001,teste = 1,d3= 1
+# TESTE/  key1 = 0, key2 = 0 ,bcd1 =  5  hex1 = 0010010  , hex2  = 1111001,teste = 0,d3= 1
+# TESTE/  key1 = 1, key2 = 0 ,bcd1 =  5  hex1 = 0010010  , hex2  = 1111001,teste = 1,d3= 1
+# TESTE/  key1 = 0, key2 = 0 ,bcd1 =  6  hex1 = 0000010  , hex2  = 1111001,teste = 0,d3= 1
+# TESTE/  key1 = 1, key2 = 0 ,bcd1 =  6  hex1 = 0000010  , hex2  = 1111001,teste = 1,d3= 1
+# TESTE/  key1 = 0, key2 = 0 ,bcd1 =  7  hex1 = 0001111  , hex2  = 1111001,teste = 0,d3= 1
+# TESTE/  key1 = 1, key2 = 0 ,bcd1 =  7  hex1 = 0001111  , hex2  = 1111001,teste = 1,d3= 1
+# TESTE/  key1 = 0, key2 = 0 ,bcd1 =  8  hex1 = 0000000  , hex2  = 1111001,teste = 0,d3= 1
+# TESTE/  key1 = 1, key2 = 0 ,bcd1 =  8  hex1 = 0000000  , hex2  = 1111001,teste = 1,d3= 1
+# TESTE/  key1 = 0, key2 = 0 ,bcd1 =  9  hex1 = 0010000  , hex2  = 1111001,teste = 0,d3= 1
+# TESTE/  key1 = 1, key2 = 0 ,bcd1 =  9  hex1 = 0010000  , hex2  = 1111001,teste = 1,d3= 1
+# TESTE/  key1 = 0, key2 = 0 ,bcd1 =  0  hex1 = 1000000  , hex2  = 1111001,teste = 0,d3= 1
+# TESTE/  key1 = 1, key2 = 0 ,bcd1 =  0  hex1 = 1000000  , hex2  = 1111001,teste = 1,d3= 1
+# TESTE/  key1 = 0, key2 = 0 ,bcd1 =  1  hex1 = 1111001  , hex2  = 1111001,teste = 0,d3= 1
+# TESTE/  key1 = 1, key2 = 0 ,bcd1 =  1  hex1 = 1111001  , hex2  = 1111001,teste = 1,d3= 1
+# TESTE/  key1 = 0, key2 = 0 ,bcd1 =  2  hex1 = 0110000  , hex2  = 1111001,teste = 0,d3= 1
+# TESTE/  key1 = 1, key2 = 0 ,bcd1 =  2  hex1 = 0110000  , hex2  = 1111001,teste = 1,d3= 1
+# TESTE/  key1 = 0, key2 = 0 ,bcd1 =  3  hex1 = 0110000  , hex2  = 1111001,teste = 0,d3= 1
