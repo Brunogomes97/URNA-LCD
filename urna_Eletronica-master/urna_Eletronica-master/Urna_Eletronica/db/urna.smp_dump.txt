@@ -1,0 +1,25 @@
+
+State Machine - |urna|estado_atual
+Name estado_atual.00111 estado_atual.00110 estado_atual.00101 estado_atual.00100 estado_atual.00011 estado_atual.00010 estado_atual.00001 estado_atual.esperaMsg 
+estado_atual.esperaMsg 0 0 0 0 0 0 0 0 
+estado_atual.00001 0 0 0 0 0 0 1 1 
+estado_atual.00010 0 0 0 0 0 1 0 1 
+estado_atual.00011 0 0 0 0 1 0 0 1 
+estado_atual.00100 0 0 0 1 0 0 0 1 
+estado_atual.00101 0 0 1 0 0 0 0 1 
+estado_atual.00110 0 1 0 0 0 0 0 1 
+estado_atual.00111 1 0 0 0 0 0 0 1 
+
+State Machine - |urna|LCD_CONTENT:u1|mLCD_ST
+Name mLCD_ST.000011 mLCD_ST.000010 mLCD_ST.000001 mLCD_ST.000000 
+mLCD_ST.000000 0 0 0 0 
+mLCD_ST.000001 0 0 1 1 
+mLCD_ST.000010 0 1 0 1 
+mLCD_ST.000011 1 0 0 1 
+
+State Machine - |urna|LCD_CONTENT:u1|LCD_Controller:u0|ST
+Name ST.11 ST.10 ST.01 ST.00 
+ST.00 0 0 0 0 
+ST.01 0 0 1 1 
+ST.10 0 1 0 1 
+ST.11 1 0 0 1 
