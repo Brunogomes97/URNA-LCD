@@ -1,4 +1,4 @@
-module urna (reset,clock,key0,key1,key2,HEX0,teste,confirma,
+module urna (reset,clock,key0,key1,key2,display1,display2,HEX0,teste,confirma,
 				 finalizar,apuracao,corrigir,valor1,valor2,
 				 LCD_ON,LCD_BLON,LCD_RW,LCD_EN,LCD_RS,LCD_DATA);
 	//maquina de estado
@@ -8,6 +8,7 @@ module urna (reset,clock,key0,key1,key2,HEX0,teste,confirma,
     reg [4:0] estado_atual;
 	 output reg [2:0] teste;
 	 reg [2:0] lcd; 
+	 output reg [6:0] display1,display2;
 	 
 	//digitos
 	input key1,key2; // botoes de digitar
@@ -88,6 +89,8 @@ module urna (reset,clock,key0,key1,key2,HEX0,teste,confirma,
 	 always @(*)begin//capturar valores dos digitos
 			valor1<=bcd1;
 			valor2<=bcd2;
+			display1<=hex1;
+			display2<=hex2;
 			c1Dez <= cv1/10;
 			c1Uni <= cv1%10;
 			c2Dez <= cv2/10;

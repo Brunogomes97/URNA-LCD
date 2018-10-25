@@ -1,5 +1,5 @@
 Analysis & Synthesis report for urna
-Wed Oct 24 14:03:07 2018
+Thu Oct 25 10:31:03 2018
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -35,11 +35,10 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
  27. Parameter Settings for Inferred Entity Instance: lpm_divide:Mod5
  28. Parameter Settings for Inferred Entity Instance: lpm_divide:Div3
  29. Parameter Settings for Inferred Entity Instance: lpm_divide:Mod3
- 30. Port Connectivity Checks: "digitos:a1"
- 31. Port Connectivity Checks: "LCD_CONTENT:u1"
- 32. Elapsed Time Per Partition
- 33. Analysis & Synthesis Messages
- 34. Analysis & Synthesis Suppressed Messages
+ 30. Port Connectivity Checks: "LCD_CONTENT:u1"
+ 31. Elapsed Time Per Partition
+ 32. Analysis & Synthesis Messages
+ 33. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -65,16 +64,16 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Oct 24 14:03:06 2018           ;
+; Analysis & Synthesis Status        ; Successful - Thu Oct 25 10:31:03 2018           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; urna                                            ;
 ; Top-level Entity Name              ; urna                                            ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 1,092                                           ;
-;     Total combinational functions  ; 1,079                                           ;
+; Total logic elements               ; 1,107                                           ;
+;     Total combinational functions  ; 1,094                                           ;
 ;     Dedicated logic registers      ; 94                                              ;
 ; Total registers                    ; 94                                              ;
-; Total pins                         ; 40                                              ;
+; Total pins                         ; 54                                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
@@ -206,28 +205,28 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+-----------------------------+
 ; Resource                                    ; Usage                       ;
 +---------------------------------------------+-----------------------------+
-; Estimated Total logic elements              ; 1,092                       ;
+; Estimated Total logic elements              ; 1,107                       ;
 ;                                             ;                             ;
-; Total combinational functions               ; 1079                        ;
+; Total combinational functions               ; 1094                        ;
 ; Logic element usage by number of LUT inputs ;                             ;
-;     -- 4 input functions                    ; 473                         ;
-;     -- 3 input functions                    ; 257                         ;
+;     -- 4 input functions                    ; 485                         ;
+;     -- 3 input functions                    ; 260                         ;
 ;     -- <=2 input functions                  ; 349                         ;
 ;                                             ;                             ;
 ; Logic elements by mode                      ;                             ;
-;     -- normal mode                          ; 886                         ;
+;     -- normal mode                          ; 901                         ;
 ;     -- arithmetic mode                      ; 193                         ;
 ;                                             ;                             ;
 ; Total registers                             ; 94                          ;
 ;     -- Dedicated logic registers            ; 94                          ;
 ;     -- I/O registers                        ; 0                           ;
 ;                                             ;                             ;
-; I/O pins                                    ; 40                          ;
+; I/O pins                                    ; 54                          ;
 ; Embedded Multiplier 9-bit elements          ; 0                           ;
 ; Maximum fan-out node                        ; LCD_CONTENT:u1|LUT_INDEX[2] ;
-; Maximum fan-out                             ; 180                         ;
-; Total fan-out                               ; 3649                        ;
-; Average fan-out                             ; 3.01                        ;
+; Maximum fan-out                             ; 177                         ;
+; Total fan-out                               ; 3720                        ;
+; Average fan-out                             ; 3.00                        ;
 +---------------------------------------------+-----------------------------+
 
 
@@ -236,11 +235,11 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node             ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                   ; Library Name ;
 +----------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------+--------------+
-; |urna                                  ; 1079 (85)         ; 94 (5)       ; 0           ; 0            ; 0       ; 0         ; 40   ; 0            ; |urna                                                                                                 ; work         ;
-;    |LCD_CONTENT:u1|                    ; 579 (558)         ; 60 (47)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |urna|LCD_CONTENT:u1                                                                                  ; work         ;
+; |urna                                  ; 1094 (87)         ; 94 (5)       ; 0           ; 0            ; 0       ; 0         ; 54   ; 0            ; |urna                                                                                                 ; work         ;
+;    |LCD_CONTENT:u1|                    ; 578 (557)         ; 60 (47)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |urna|LCD_CONTENT:u1                                                                                  ; work         ;
 ;       |LCD_Controller:u0|              ; 21 (21)           ; 13 (13)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |urna|LCD_CONTENT:u1|LCD_Controller:u0                                                                ; work         ;
 ;    |LCD_Reset_Delay:r0|                ; 28 (28)           ; 21 (21)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |urna|LCD_Reset_Delay:r0                                                                              ; work         ;
-;    |digitos:a1|                        ; 8 (8)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |urna|digitos:a1                                                                                      ; work         ;
+;    |digitos:a1|                        ; 22 (22)           ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |urna|digitos:a1                                                                                      ; work         ;
 ;    |lpm_divide:Div0|                   ; 30 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |urna|lpm_divide:Div0                                                                                 ; work         ;
 ;       |lpm_divide_vcm:auto_generated|  ; 30 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |urna|lpm_divide:Div0|lpm_divide_vcm:auto_generated                                                   ; work         ;
 ;          |sign_div_unsign_9kh:divider| ; 30 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |urna|lpm_divide:Div0|lpm_divide_vcm:auto_generated|sign_div_unsign_9kh:divider                       ; work         ;
@@ -422,15 +421,15 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                              ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                    ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------+
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |urna|LCD_CONTENT:u1|LCD_Controller:u0|mStart ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |urna|cadVencedr1                             ;
-; 7:1                ; 2 bits    ; 8 LEs         ; 6 LEs                ; 2 LEs                  ; No         ; |urna|LCD_CONTENT:u1|mLCD_ST                  ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                             ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                   ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------+
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |urna|LCD_CONTENT:u1|LCD_Controller:u0|oDone ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |urna|cadVencedr1                            ;
+; 7:1                ; 2 bits    ; 8 LEs         ; 6 LEs                ; 2 LEs                  ; No         ; |urna|LCD_CONTENT:u1|mLCD_ST                 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------+
 
 
 +----------------------------------------------------------------------+
@@ -754,16 +753,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "digitos:a1"                                                                         ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                             ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; hex1 ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; hex2 ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-
-
 +--------------------------------------------------+
 ; Port Connectivity Checks: "LCD_CONTENT:u1"       ;
 +----------------+-------+----------+--------------+
@@ -781,7 +770,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:10     ;
+; Top            ; 00:00:20     ;
 +----------------+--------------+
 
 
@@ -791,7 +780,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Wed Oct 24 14:02:38 2018
+    Info: Processing started: Thu Oct 25 10:29:58 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off urna -c urna
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file urna.v
@@ -806,10 +795,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file lcd_con
 Info (12021): Found 1 design units, including 1 entities, in source file lcd_reset_delay.v
     Info (12023): Found entity 1: LCD_Reset_Delay
 Info (12127): Elaborating entity "urna" for the top level hierarchy
-Warning (10036): Verilog HDL or VHDL warning at urna.v(30): object "estado" assigned a value but never read
-Warning (10230): Verilog HDL assignment warning at urna.v(91): truncated value with size 32 to match size of target (4)
-Warning (10230): Verilog HDL assignment warning at urna.v(92): truncated value with size 32 to match size of target (4)
-Warning (10230): Verilog HDL assignment warning at urna.v(93): truncated value with size 32 to match size of target (4)
+Warning (10036): Verilog HDL or VHDL warning at urna.v(31): object "estado" assigned a value but never read
 Warning (10230): Verilog HDL assignment warning at urna.v(94): truncated value with size 32 to match size of target (4)
 Warning (10230): Verilog HDL assignment warning at urna.v(95): truncated value with size 32 to match size of target (4)
 Warning (10230): Verilog HDL assignment warning at urna.v(96): truncated value with size 32 to match size of target (4)
@@ -819,67 +805,70 @@ Warning (10230): Verilog HDL assignment warning at urna.v(99): truncated value w
 Warning (10230): Verilog HDL assignment warning at urna.v(100): truncated value with size 32 to match size of target (4)
 Warning (10230): Verilog HDL assignment warning at urna.v(101): truncated value with size 32 to match size of target (4)
 Warning (10230): Verilog HDL assignment warning at urna.v(102): truncated value with size 32 to match size of target (4)
-Info (10264): Verilog HDL Case Statement information at urna.v(109): all case item expressions in this case statement are onehot
-Warning (10230): Verilog HDL assignment warning at urna.v(148): truncated value with size 32 to match size of target (6)
-Warning (10230): Verilog HDL assignment warning at urna.v(150): truncated value with size 32 to match size of target (6)
-Warning (10230): Verilog HDL assignment warning at urna.v(152): truncated value with size 32 to match size of target (6)
-Warning (10230): Verilog HDL assignment warning at urna.v(154): truncated value with size 32 to match size of target (6)
-Warning (10230): Verilog HDL assignment warning at urna.v(156): truncated value with size 32 to match size of target (6)
+Warning (10230): Verilog HDL assignment warning at urna.v(103): truncated value with size 32 to match size of target (4)
+Warning (10230): Verilog HDL assignment warning at urna.v(104): truncated value with size 32 to match size of target (4)
+Warning (10230): Verilog HDL assignment warning at urna.v(105): truncated value with size 32 to match size of target (4)
+Info (10264): Verilog HDL Case Statement information at urna.v(112): all case item expressions in this case statement are onehot
+Warning (10230): Verilog HDL assignment warning at urna.v(151): truncated value with size 32 to match size of target (6)
+Warning (10230): Verilog HDL assignment warning at urna.v(153): truncated value with size 32 to match size of target (6)
+Warning (10230): Verilog HDL assignment warning at urna.v(155): truncated value with size 32 to match size of target (6)
 Warning (10230): Verilog HDL assignment warning at urna.v(157): truncated value with size 32 to match size of target (6)
-Warning (10240): Verilog HDL Always Construct warning at urna.v(127): inferring latch(es) for variable "total", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at urna.v(127): inferring latch(es) for variable "cv1", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at urna.v(127): inferring latch(es) for variable "cv2", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at urna.v(127): inferring latch(es) for variable "cv3", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at urna.v(127): inferring latch(es) for variable "cv4", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at urna.v(127): inferring latch(es) for variable "nulo", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at urna.v(127): inferring latch(es) for variable "cadVencedr1", which holds its previous value in one or more paths through the always construct
-Warning (10240): Verilog HDL Always Construct warning at urna.v(127): inferring latch(es) for variable "cadVencedr2", which holds its previous value in one or more paths through the always construct
+Warning (10230): Verilog HDL assignment warning at urna.v(159): truncated value with size 32 to match size of target (6)
+Warning (10230): Verilog HDL assignment warning at urna.v(160): truncated value with size 32 to match size of target (6)
+Warning (10240): Verilog HDL Always Construct warning at urna.v(130): inferring latch(es) for variable "total", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at urna.v(130): inferring latch(es) for variable "cv1", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at urna.v(130): inferring latch(es) for variable "cv2", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at urna.v(130): inferring latch(es) for variable "cv3", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at urna.v(130): inferring latch(es) for variable "cv4", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at urna.v(130): inferring latch(es) for variable "nulo", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at urna.v(130): inferring latch(es) for variable "cadVencedr1", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at urna.v(130): inferring latch(es) for variable "cadVencedr2", which holds its previous value in one or more paths through the always construct
 Warning (10034): Output port "confirma" at urna.v(6) has no driver
 Warning (10034): Output port "apuracao" at urna.v(6) has no driver
-Info (10041): Inferred latch for "cadVencedr2[0]" at urna.v(127)
-Info (10041): Inferred latch for "cadVencedr2[1]" at urna.v(127)
-Info (10041): Inferred latch for "cadVencedr2[2]" at urna.v(127)
-Info (10041): Inferred latch for "cadVencedr2[3]" at urna.v(127)
-Info (10041): Inferred latch for "cadVencedr1[0]" at urna.v(127)
-Info (10041): Inferred latch for "cadVencedr1[1]" at urna.v(127)
-Info (10041): Inferred latch for "cadVencedr1[2]" at urna.v(127)
-Info (10041): Inferred latch for "cadVencedr1[3]" at urna.v(127)
-Info (10041): Inferred latch for "nulo[0]" at urna.v(127)
-Info (10041): Inferred latch for "nulo[1]" at urna.v(127)
-Info (10041): Inferred latch for "nulo[2]" at urna.v(127)
-Info (10041): Inferred latch for "nulo[3]" at urna.v(127)
-Info (10041): Inferred latch for "nulo[4]" at urna.v(127)
-Info (10041): Inferred latch for "nulo[5]" at urna.v(127)
-Info (10041): Inferred latch for "cv4[0]" at urna.v(127)
-Info (10041): Inferred latch for "cv4[1]" at urna.v(127)
-Info (10041): Inferred latch for "cv4[2]" at urna.v(127)
-Info (10041): Inferred latch for "cv4[3]" at urna.v(127)
-Info (10041): Inferred latch for "cv4[4]" at urna.v(127)
-Info (10041): Inferred latch for "cv4[5]" at urna.v(127)
-Info (10041): Inferred latch for "cv3[0]" at urna.v(127)
-Info (10041): Inferred latch for "cv3[1]" at urna.v(127)
-Info (10041): Inferred latch for "cv3[2]" at urna.v(127)
-Info (10041): Inferred latch for "cv3[3]" at urna.v(127)
-Info (10041): Inferred latch for "cv3[4]" at urna.v(127)
-Info (10041): Inferred latch for "cv3[5]" at urna.v(127)
-Info (10041): Inferred latch for "cv2[0]" at urna.v(127)
-Info (10041): Inferred latch for "cv2[1]" at urna.v(127)
-Info (10041): Inferred latch for "cv2[2]" at urna.v(127)
-Info (10041): Inferred latch for "cv2[3]" at urna.v(127)
-Info (10041): Inferred latch for "cv2[4]" at urna.v(127)
-Info (10041): Inferred latch for "cv2[5]" at urna.v(127)
-Info (10041): Inferred latch for "cv1[0]" at urna.v(127)
-Info (10041): Inferred latch for "cv1[1]" at urna.v(127)
-Info (10041): Inferred latch for "cv1[2]" at urna.v(127)
-Info (10041): Inferred latch for "cv1[3]" at urna.v(127)
-Info (10041): Inferred latch for "cv1[4]" at urna.v(127)
-Info (10041): Inferred latch for "cv1[5]" at urna.v(127)
-Info (10041): Inferred latch for "total[0]" at urna.v(127)
-Info (10041): Inferred latch for "total[1]" at urna.v(127)
-Info (10041): Inferred latch for "total[2]" at urna.v(127)
-Info (10041): Inferred latch for "total[3]" at urna.v(127)
-Info (10041): Inferred latch for "total[4]" at urna.v(127)
-Info (10041): Inferred latch for "total[5]" at urna.v(127)
+Info (10041): Inferred latch for "cadVencedr2[0]" at urna.v(130)
+Info (10041): Inferred latch for "cadVencedr2[1]" at urna.v(130)
+Info (10041): Inferred latch for "cadVencedr2[2]" at urna.v(130)
+Info (10041): Inferred latch for "cadVencedr2[3]" at urna.v(130)
+Info (10041): Inferred latch for "cadVencedr1[0]" at urna.v(130)
+Info (10041): Inferred latch for "cadVencedr1[1]" at urna.v(130)
+Info (10041): Inferred latch for "cadVencedr1[2]" at urna.v(130)
+Info (10041): Inferred latch for "cadVencedr1[3]" at urna.v(130)
+Info (10041): Inferred latch for "nulo[0]" at urna.v(130)
+Info (10041): Inferred latch for "nulo[1]" at urna.v(130)
+Info (10041): Inferred latch for "nulo[2]" at urna.v(130)
+Info (10041): Inferred latch for "nulo[3]" at urna.v(130)
+Info (10041): Inferred latch for "nulo[4]" at urna.v(130)
+Info (10041): Inferred latch for "nulo[5]" at urna.v(130)
+Info (10041): Inferred latch for "cv4[0]" at urna.v(130)
+Info (10041): Inferred latch for "cv4[1]" at urna.v(130)
+Info (10041): Inferred latch for "cv4[2]" at urna.v(130)
+Info (10041): Inferred latch for "cv4[3]" at urna.v(130)
+Info (10041): Inferred latch for "cv4[4]" at urna.v(130)
+Info (10041): Inferred latch for "cv4[5]" at urna.v(130)
+Info (10041): Inferred latch for "cv3[0]" at urna.v(130)
+Info (10041): Inferred latch for "cv3[1]" at urna.v(130)
+Info (10041): Inferred latch for "cv3[2]" at urna.v(130)
+Info (10041): Inferred latch for "cv3[3]" at urna.v(130)
+Info (10041): Inferred latch for "cv3[4]" at urna.v(130)
+Info (10041): Inferred latch for "cv3[5]" at urna.v(130)
+Info (10041): Inferred latch for "cv2[0]" at urna.v(130)
+Info (10041): Inferred latch for "cv2[1]" at urna.v(130)
+Info (10041): Inferred latch for "cv2[2]" at urna.v(130)
+Info (10041): Inferred latch for "cv2[3]" at urna.v(130)
+Info (10041): Inferred latch for "cv2[4]" at urna.v(130)
+Info (10041): Inferred latch for "cv2[5]" at urna.v(130)
+Info (10041): Inferred latch for "cv1[0]" at urna.v(130)
+Info (10041): Inferred latch for "cv1[1]" at urna.v(130)
+Info (10041): Inferred latch for "cv1[2]" at urna.v(130)
+Info (10041): Inferred latch for "cv1[3]" at urna.v(130)
+Info (10041): Inferred latch for "cv1[4]" at urna.v(130)
+Info (10041): Inferred latch for "cv1[5]" at urna.v(130)
+Info (10041): Inferred latch for "total[0]" at urna.v(130)
+Info (10041): Inferred latch for "total[1]" at urna.v(130)
+Info (10041): Inferred latch for "total[2]" at urna.v(130)
+Info (10041): Inferred latch for "total[3]" at urna.v(130)
+Info (10041): Inferred latch for "total[4]" at urna.v(130)
+Info (10041): Inferred latch for "total[5]" at urna.v(130)
 Info (12128): Elaborating entity "LCD_Reset_Delay" for hierarchy "LCD_Reset_Delay:r0"
 Info (12128): Elaborating entity "LCD_CONTENT" for hierarchy "LCD_CONTENT:u1"
 Warning (10230): Verilog HDL assignment warning at LCD_Content.v(65): truncated value with size 32 to match size of target (18)
@@ -962,16 +951,16 @@ Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
 Warning (21074): Design contains 2 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "finalizar"
     Warning (15610): No output dependent on input pin "corrigir"
-Info (21057): Implemented 1132 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 1161 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 7 input pins
-    Info (21059): Implemented 25 output pins
+    Info (21059): Implemented 39 output pins
     Info (21060): Implemented 8 bidirectional pins
-    Info (21061): Implemented 1092 logic cells
+    Info (21061): Implemented 1107 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 68 warnings
-    Info: Peak virtual memory: 4644 megabytes
-    Info: Processing ended: Wed Oct 24 14:03:07 2018
-    Info: Elapsed time: 00:00:29
-    Info: Total CPU time (on all processors): 00:00:07
+    Info: Peak virtual memory: 4628 megabytes
+    Info: Processing ended: Thu Oct 25 10:31:03 2018
+    Info: Elapsed time: 00:01:05
+    Info: Total CPU time (on all processors): 00:00:06
 
 
 +------------------------------------------+
