@@ -1,0 +1,844 @@
+Quartus II
+Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+11
+1000
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+LCD_Reset_Delay
+# storage
+db|urna.(1).cnf
+db|urna.(1).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+lcd_reset_delay.v
+b7cdf2d5115bd3a75c93af9959178a8d
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+LCD_Reset_Delay:r0
+}
+# macro_sequence
+
+# end
+# entity
+LCD_Controller
+# storage
+db|urna.(3).cnf
+db|urna.(3).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+lcd_controller.v
+a519581b938ad6a1e97bc9584a35103c
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# user_parameter {
+CLK_Divide
+16
+PARAMETER_SIGNED_DEC
+DEF
+}
+# hierarchies {
+LCD_CONTENT:u1|LCD_Controller:u0
+}
+# macro_sequence
+
+# end
+# entity
+lpm_divide
+# storage
+db|urna.(5).cnf
+db|urna.(5).cnf
+# case_insensitive
+# source_file
+c:|altera|91sp2|quartus|libraries|megafunctions|lpm_divide.tdf
+54966f81ff8a917b1dc9b9ad1a09648
+7
+# user_parameter {
+LPM_WIDTHN
+6
+PARAMETER_UNKNOWN
+USR
+LPM_WIDTHD
+4
+PARAMETER_UNKNOWN
+USR
+LPM_NREPRESENTATION
+UNSIGNED
+PARAMETER_UNKNOWN
+USR
+LPM_DREPRESENTATION
+UNSIGNED
+PARAMETER_UNKNOWN
+USR
+LPM_PIPELINE
+0
+PARAMETER_UNKNOWN
+DEF
+LPM_REMAINDERPOSITIVE
+TRUE
+PARAMETER_UNKNOWN
+DEF
+MAXIMIZE_SPEED
+5
+PARAMETER_UNKNOWN
+DEF
+CBXI_PARAMETER
+lpm_divide_vcm
+PARAMETER_UNKNOWN
+USR
+CARRY_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+OPTIMIZE_FOR_SPEED
+5
+PARAMETER_UNKNOWN
+USR
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+}
+# used_port {
+quotient3
+-1
+3
+quotient2
+-1
+3
+quotient1
+-1
+3
+quotient0
+-1
+3
+numer5
+-1
+3
+numer4
+-1
+3
+numer3
+-1
+3
+numer2
+-1
+3
+numer1
+-1
+3
+numer0
+-1
+3
+denom2
+-1
+1
+denom0
+-1
+1
+denom3
+-1
+2
+denom1
+-1
+2
+}
+# macro_sequence
+
+# end
+# entity
+lpm_divide_vcm
+# storage
+db|urna.(6).cnf
+db|urna.(6).cnf
+# case_insensitive
+# source_file
+db|lpm_divide_vcm.tdf
+e9659e885b441a23372c362dae72aa61
+7
+# used_port {
+quotient5
+-1
+3
+quotient4
+-1
+3
+quotient3
+-1
+3
+quotient2
+-1
+3
+quotient1
+-1
+3
+quotient0
+-1
+3
+numer5
+-1
+3
+numer4
+-1
+3
+numer3
+-1
+3
+numer2
+-1
+3
+numer1
+-1
+3
+numer0
+-1
+3
+denom3
+-1
+3
+denom2
+-1
+3
+denom1
+-1
+3
+denom0
+-1
+3
+}
+# macro_sequence
+
+# end
+# entity
+sign_div_unsign_9kh
+# storage
+db|urna.(7).cnf
+db|urna.(7).cnf
+# case_insensitive
+# source_file
+db|sign_div_unsign_9kh.tdf
+3207a535ae4c4de5ed356928e1816c
+7
+# used_port {
+remainder3
+-1
+3
+remainder2
+-1
+3
+remainder1
+-1
+3
+remainder0
+-1
+3
+quotient5
+-1
+3
+quotient4
+-1
+3
+quotient3
+-1
+3
+quotient2
+-1
+3
+quotient1
+-1
+3
+quotient0
+-1
+3
+numerator5
+-1
+3
+numerator4
+-1
+3
+numerator3
+-1
+3
+numerator2
+-1
+3
+numerator1
+-1
+3
+numerator0
+-1
+3
+denominator3
+-1
+3
+denominator2
+-1
+3
+denominator1
+-1
+3
+denominator0
+-1
+3
+}
+# macro_sequence
+
+# end
+# entity
+alt_u_div_kve
+# storage
+db|urna.(8).cnf
+db|urna.(8).cnf
+# case_insensitive
+# source_file
+db|alt_u_div_kve.tdf
+c92154a2218ed5e8c64a614e1dac62
+7
+# used_port {
+remainder3
+-1
+3
+remainder2
+-1
+3
+remainder1
+-1
+3
+remainder0
+-1
+3
+quotient5
+-1
+3
+quotient4
+-1
+3
+quotient3
+-1
+3
+quotient2
+-1
+3
+quotient1
+-1
+3
+quotient0
+-1
+3
+numerator5
+-1
+3
+numerator4
+-1
+3
+numerator3
+-1
+3
+numerator2
+-1
+3
+numerator1
+-1
+3
+numerator0
+-1
+3
+denominator3
+-1
+3
+denominator2
+-1
+3
+denominator1
+-1
+3
+denominator0
+-1
+3
+}
+# macro_sequence
+
+# end
+# entity
+add_sub_lkc
+# storage
+db|urna.(9).cnf
+db|urna.(9).cnf
+# case_insensitive
+# source_file
+db|add_sub_lkc.tdf
+b2a1251a432948d540b9ad92d3593
+7
+# used_port {
+result0
+-1
+3
+datab0
+-1
+3
+dataa0
+-1
+3
+cout
+-1
+3
+}
+# macro_sequence
+
+# end
+# entity
+add_sub_mkc
+# storage
+db|urna.(10).cnf
+db|urna.(10).cnf
+# case_insensitive
+# source_file
+db|add_sub_mkc.tdf
+57177a76ef9543d7eb6282b9a890a9
+7
+# used_port {
+result1
+-1
+3
+result0
+-1
+3
+datab1
+-1
+3
+datab0
+-1
+3
+dataa1
+-1
+3
+dataa0
+-1
+3
+cout
+-1
+3
+}
+# macro_sequence
+
+# end
+# entity
+lpm_divide
+# storage
+db|urna.(11).cnf
+db|urna.(11).cnf
+# case_insensitive
+# source_file
+c:|altera|91sp2|quartus|libraries|megafunctions|lpm_divide.tdf
+54966f81ff8a917b1dc9b9ad1a09648
+7
+# user_parameter {
+LPM_WIDTHN
+6
+PARAMETER_UNKNOWN
+USR
+LPM_WIDTHD
+4
+PARAMETER_UNKNOWN
+USR
+LPM_NREPRESENTATION
+UNSIGNED
+PARAMETER_UNKNOWN
+USR
+LPM_DREPRESENTATION
+UNSIGNED
+PARAMETER_UNKNOWN
+USR
+LPM_PIPELINE
+0
+PARAMETER_UNKNOWN
+DEF
+LPM_REMAINDERPOSITIVE
+TRUE
+PARAMETER_UNKNOWN
+DEF
+MAXIMIZE_SPEED
+5
+PARAMETER_UNKNOWN
+DEF
+CBXI_PARAMETER
+lpm_divide_25m
+PARAMETER_UNKNOWN
+USR
+CARRY_CHAIN
+MANUAL
+PARAMETER_UNKNOWN
+USR
+OPTIMIZE_FOR_SPEED
+5
+PARAMETER_UNKNOWN
+USR
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+}
+# used_port {
+remain3
+-1
+3
+remain2
+-1
+3
+remain1
+-1
+3
+remain0
+-1
+3
+numer5
+-1
+3
+numer4
+-1
+3
+numer3
+-1
+3
+numer2
+-1
+3
+numer1
+-1
+3
+numer0
+-1
+3
+denom2
+-1
+1
+denom0
+-1
+1
+denom3
+-1
+2
+denom1
+-1
+2
+}
+# macro_sequence
+
+# end
+# entity
+lpm_divide_25m
+# storage
+db|urna.(12).cnf
+db|urna.(12).cnf
+# case_insensitive
+# source_file
+db|lpm_divide_25m.tdf
+dfe08826c1b757cc8266a98cfd44bd5
+7
+# used_port {
+remain3
+-1
+3
+remain2
+-1
+3
+remain1
+-1
+3
+remain0
+-1
+3
+numer5
+-1
+3
+numer4
+-1
+3
+numer3
+-1
+3
+numer2
+-1
+3
+numer1
+-1
+3
+numer0
+-1
+3
+denom3
+-1
+3
+denom2
+-1
+3
+denom1
+-1
+3
+denom0
+-1
+3
+}
+# macro_sequence
+
+# end
+# entity
+digitos
+# storage
+db|urna.(4).cnf
+db|urna.(4).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+digitos.v
+702acedb678e79775f8d569cb274648
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+digitos:a1
+}
+# macro_sequence
+
+# end
+# entity
+LCD_CONTENT
+# storage
+db|urna.(2).cnf
+db|urna.(2).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+lcd_content.v
+982125b03d91e281f2e6a5e4cb74bfb3
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# user_parameter {
+LCD_INTIAL
+0
+PARAMETER_SIGNED_DEC
+DEF
+LCD_LINE1
+5
+PARAMETER_SIGNED_DEC
+DEF
+LCD_CH_LINE
+21
+PARAMETER_SIGNED_DEC
+DEF
+LCD_LINE2
+22
+PARAMETER_SIGNED_DEC
+DEF
+LUT_SIZE
+38
+PARAMETER_SIGNED_DEC
+DEF
+}
+# hierarchies {
+LCD_CONTENT:u1
+}
+# macro_sequence
+
+# end
+# entity
+urna
+# storage
+db|urna.(0).cnf
+db|urna.(0).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+urna.v
+a7e4fe4fe13d7a7891b54734668a121
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# user_parameter {
+esperaMsg
+0
+PARAMETER_SIGNED_DEC
+DEF
+esperaDigito
+1
+PARAMETER_SIGNED_DEC
+DEF
+confirmaDig
+2
+PARAMETER_SIGNED_DEC
+DEF
+confirmaMsg
+3
+PARAMETER_SIGNED_DEC
+DEF
+apura
+4
+PARAMETER_SIGNED_DEC
+DEF
+cadvencedor
+5
+PARAMETER_SIGNED_DEC
+DEF
+totalvotos1
+6
+PARAMETER_SIGNED_DEC
+DEF
+totalvotos2
+7
+PARAMETER_SIGNED_DEC
+DEF
+cad1
+10
+PARAMETER_SIGNED_DEC
+DEF
+cad2
+13
+PARAMETER_SIGNED_DEC
+DEF
+cad3
+17
+PARAMETER_SIGNED_DEC
+DEF
+cad4
+51
+PARAMETER_SIGNED_DEC
+DEF
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# complete
+
